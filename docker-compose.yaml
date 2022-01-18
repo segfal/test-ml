@@ -8,4 +8,10 @@ services:
       - "80:80"
     command: bash -c "python3 -m http.server 80"
     restart: always
+  projdb:
+    build: ./postgresdb
+    ports:
+      - "5432:5432"
+    restart: always
+
 
