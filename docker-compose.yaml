@@ -16,4 +16,10 @@ services:
       - "pulling_data"
     restart: always
 
-
+  flow_data:
+    build: ./airflow
+    ports:
+      - "82:80"
+    depends_on:
+      - "projdb"
+    restart: always
