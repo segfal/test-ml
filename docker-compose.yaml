@@ -11,7 +11,9 @@ services:
   projdb:
     build: ./postgresdb
     ports:
-      - "5432:5432"
+      - "81:80"
+    depends_on:
+      - "pulling_data"
     restart: always
 
 
