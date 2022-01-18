@@ -1,0 +1,11 @@
+version: '3.7'
+services:
+
+
+  pulling_data:
+    build: ./pulling_data
+    ports:
+      - "80:80"
+    command: bash -c "python3 -m http.server 80"
+    restart: always
+
