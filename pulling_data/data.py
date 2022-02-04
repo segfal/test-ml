@@ -53,7 +53,7 @@ for submission in reddit.subreddit("compsci").hot(limit=25):
     x = int(submission.created_utc)
     x = datetime.utcfromtimestamp(x).strftime('%Y-%m-%d %H:%M:%S')
     for comments in submission.comments:
-        time = datetime.utcfromtimestamp(comments.created_utc).strftime('%Y-%m-%d %H:%M:%S')
+        time = datetime.utcfromåtimestamp(comments.created_utc).strftime('%Y-%m-%d %H:%M:%S')
         postid = comments.id
         title = comments.submission.title
         text = comments.body
@@ -79,13 +79,3 @@ for submission in reddit.subreddit("compsci").new(limit=10):
 ##turn table to json
 arr = json.dumps(table)
 
-
-app = Flask(__name__)
-
-
-@app.route('/')
-def index():
-    return arr;
-
-
-app.run(debug = True , host = "0.0.0.0",port = 5100)

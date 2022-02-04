@@ -1,9 +1,9 @@
 flask
 pandas
-openpyxl
 numpy
-keras
-word2vec
-vaderSentiment
+tweepy
+praw
+XlsxWriter
+requests
 python-dotenv
-openpyxl
+
