@@ -1,4 +1,9 @@
 flask
 pandas
+openpyxl
 numpy
 keras
+word2vec
+vaderSentiment
+python-dotenv
+openpyxl
