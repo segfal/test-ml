@@ -28,7 +28,7 @@ apicall = reddit_dumps.json()
 ##auth
 
 
-conn = psycopg2.connect(database="social_network", user="postgres", password="H5pME2DfJPtvuSJM", host="localhost", port="5432")
+conn = psycopg2.connect(database="social_network", user="postgres", password=pass, host="localhost", port="5432")
 curr = conn.cursor()
 
 ## Create a table
