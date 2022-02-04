@@ -3,4 +3,5 @@ flask
 pandas
 numpy
 sqlalchemy
+python-dotenv
 
